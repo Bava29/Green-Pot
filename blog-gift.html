@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenPot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="GreenPot">
+            </a>
+
+
+            <!-- Desktop / Main Navigation -->
+            <nav class="main-navigation" id="mainNavigation">
+
+                <!-- Mobile Menu Close -->
+                <button class="menu-close" id="menuClose" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item has-dropdown">
+                        <a href="#">
+                            Products
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="indoor-plants.html">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="outdoor-plants.html">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="succulents.html">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="garden.html">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a href="blog-gift.html">
+                            Blog &amp; Gift
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile Menu Actions -->
+                <div class="mobile-menu-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="mobile-action-btn theme-toggle" id="mobileThemeToggle"
+                        aria-label="Toggle Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                        <span>Dark Mode</span>
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="mobile-action-btn rtl-toggle" id="mobileRtlToggle"
+                        aria-label="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                        <span>RTL Mode</span>
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="mobile-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </a>
+
+
+                    <!-- Bulk Orders -->
+                    <a href="bulk-orders.html" class="mobile-bulk-btn">
+                        Bulk Orders
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Right Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                    aria-label="Toggle Dark Mode" title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                    title="RTL Mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="header-login">
+                    <span>Login</span>
+                </a>
+
+
+                <!-- Bulk Orders -->
+                <a href="bulk-orders.html" class="header-bulk">
+                    <span>Bulk Orders</span>
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     Contact Page Hero
+========================================= -->
+
+    <section class="page-hero bg-hero">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    GreenPot Journal & Gifting
+                </span>
+
+                <h1>
+                    Ideas to grow,
+                    moments to remember.
+
+                </h1>
+
+                <p>
+                    Explore thoughtful plant care inspiration, growing tips
+                    and beautiful green gifts made for every special moment.
+
+                </p>
+
+                <div class="page-hero-breadcrumb">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <i class="fa-solid fa-angle-right"></i>
+
+                    <span>
+                        Blog & Gift
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Featured Gift Ideas
+========================================= -->
+
+    <section class="gift-ideas-section">
+
+        <div class="container">
+
+            <div class="gift-ideas-heading">
+
+                <span class="section-label">
+                    Thoughtful Gifting
+                </span>
+
+                <h2>
+                    A little green<br>
+                    makes a lovely gift.
+                </h2>
+
+                <p>
+                    Discover simple and meaningful ways to gift
+                    greenery to someone special.
+                </p>
+
+            </div>
+
+
+            <div class="gift-ideas-grid">
+
+                <!-- Gift Card 01 -->
+
+                <article class="gift-idea-card">
+
+                    <div class="gift-idea-image">
+
+                        <img src="images/gift-idea-01.jpg" alt="Plants for plant lovers">
+
+                    </div>
+
+                    <div class="gift-idea-content">
+
+                        <span>
+                            For Plant Lovers
+                        </span>
+
+                        <h3>
+                            Gifts they'll love to grow.
+                        </h3>
+
+                        <p>
+                            Beautiful plants and thoughtful essentials
+                            for the person who always wants more green.
+                        </p>
+
+                        <a href="#">
+                            Explore Ideas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Gift Card 02 -->
+
+                <article class="gift-idea-card">
+
+                    <div class="gift-idea-image">
+
+                        <img src="images/gift-idea-02.jpg" alt="New home plant gifts">
+
+                    </div>
+
+                    <div class="gift-idea-content">
+
+                        <span>
+                            New Home
+                        </span>
+
+                        <h3>
+                            A fresh start deserves some green.
+                        </h3>
+
+                        <p>
+                            Welcome someone into their new space with
+                            greenery that adds warmth and character.
+                        </p>
+
+                        <a href="#">
+                            Explore Ideas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Gift Card 03 -->
+
+                <article class="gift-idea-card">
+
+                    <div class="gift-idea-image">
+
+                        <img src="images/gift-idea-03.jpg" alt="Thoughtful green gifts">
+
+                    </div>
+
+                    <div class="gift-idea-content">
+
+                        <span>
+                            Just Because
+                        </span>
+
+                        <h3>
+                            Something thoughtful, naturally.
+                        </h3>
+
+                        <p>
+                            Send a little happiness with a green gift
+                            chosen simply to make someone's day.
+                        </p>
+
+                        <a href="#">
+                            Explore Ideas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     GreenPot Journal
+========================================= -->
+
+    <section class="blog-journal-section">
+
+        <div class="container">
+
+            <div class="journal-heading">
+
+                <span class="section-label">
+                    From the GreenPot Journal
+                </span>
+
+                <h2>
+                    Little things worth<br>
+                    knowing about plants.
+                </h2>
+
+                <p>
+                    Simple ideas, practical tips and inspiration
+                    to help you enjoy a greener everyday life.
+                </p>
+
+            </div>
+
+
+            <div class="journal-grid">
+
+                <!-- Article 01 -->
+
+                <article class="journal-card">
+
+                    <div class="journal-image">
+
+                        <img src="images/blog-01.jpg" alt="Choosing the right indoor plant">
+
+                    </div>
+
+                    <div class="journal-content">
+
+                        <span class="journal-meta">
+                            Plant Guide
+                        </span>
+
+                        <h3>
+                            How to choose the right plant.
+                        </h3>
+
+                        <p>
+                            Light, room size and daily routine can all
+                            help you find a plant that feels at home.
+                        </p>
+
+                        <a href="#">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 02 -->
+
+                <article class="journal-card">
+
+                    <div class="journal-image">
+
+                        <img src="images/blog-02.jpg" alt="Simple plant care tips">
+
+                    </div>
+
+                    <div class="journal-content">
+
+                        <span class="journal-meta">
+                            Plant Care
+                        </span>
+
+                        <h3>
+                            Simple habits that help plants thrive.
+                        </h3>
+
+                        <p>
+                            Discover easy everyday habits for healthier plants without making care complicated.
+                        </p>
+
+                        <a href="#">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 03 -->
+
+                <article class="journal-card">
+
+                    <div class="journal-image">
+
+                        <img src="images/blog-03.jpg" alt="Creating a greener home">
+
+                    </div>
+
+                    <div class="journal-content">
+
+                        <span class="journal-meta">
+                            Green Living
+                        </span>
+
+                        <h3>
+                            Easy ways to create a greener home.
+                        </h3>
+
+                        <p>
+                            Bring more natural character into your home
+                            with thoughtful and simple styling ideas.
+                        </p>
+
+                        <a href="#">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="journal-footer">
+
+                <a href="#" class="journal-all-link">
+                    Explore All Articles
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Gift by Occasion
+========================================= -->
+
+    <section class="occasion-gifts-section">
+
+        <div class="container">
+
+            <div class="occasion-gifts-heading">
+
+                <span class="section-label">
+                    Gift For Every Moment
+                </span>
+
+                <h2>
+                    A green gift for<br>
+                    every occasion.
+                </h2>
+
+                <p>
+                    Whether it is a celebration or a simple gesture,
+                    find a thoughtful way to make someone feel special.
+                </p>
+
+            </div>
+
+
+            <div class="occasion-gifts-grid">
+
+                <!-- Occasion 01 -->
+
+                <a href="#" class="occasion-gift-card">
+
+                    <div class="occasion-gift-icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+
+                    <div class="occasion-gift-content">
+
+                        <span>
+                            Celebrate
+                        </span>
+
+                        <h3>
+                            Birthday
+                        </h3>
+
+                        <p>
+                            Give something living, beautiful and
+                            made to be enjoyed long after the day.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right occasion-arrow"></i>
+
+                </a>
+
+
+                <!-- Occasion 02 -->
+
+                <a href="#" class="occasion-gift-card">
+
+                    <div class="occasion-gift-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <div class="occasion-gift-content">
+
+                        <span>
+                            New Beginnings
+                        </span>
+
+                        <h3>
+                            Housewarming
+                        </h3>
+
+                        <p>
+                            Welcome someone into their new space
+                            with a touch of natural warmth.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right occasion-arrow"></i>
+
+                </a>
+
+
+                <!-- Occasion 03 -->
+
+                <a href="#" class="occasion-gift-card">
+
+                    <div class="occasion-gift-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div class="occasion-gift-content">
+
+                        <span>
+                            With Love
+                        </span>
+
+                        <h3>
+                            Anniversary
+                        </h3>
+
+                        <p>
+                            Celebrate meaningful moments with a
+                            thoughtful gift that keeps growing.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right occasion-arrow"></i>
+
+                </a>
+
+
+                <!-- Occasion 04 -->
+
+                <a href="#" class="occasion-gift-card">
+
+                    <div class="occasion-gift-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+
+                    <div class="occasion-gift-content">
+
+                        <span>
+                            Just Because
+                        </span>
+
+                        <h3>
+                            Thank You
+                        </h3>
+
+                        <p>
+                            Say thank you with a simple green gesture
+                            that feels personal and meaningful.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right occasion-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Blog & Gifts Final CTA
+========================================= -->
+
+    <section class="blog-gift-cta-section">
+
+        <div class="blog-gift-cta-overlay"></div>
+
+        <div class="container">
+
+            <div class="blog-gift-cta-content">
+
+                <span class="blog-gift-cta-label">
+                    Give Something Green
+                </span>
+
+                <h2>
+                    Give a little green.<br>
+                    Make it meaningful.
+                </h2>
+
+                <p>
+                    Find beautiful plants and thoughtful garden gifts
+                    for birthdays, new beginnings, celebrations or
+                    simply to make someone's day a little brighter.
+                </p>
+
+                <div class="blog-gift-cta-actions">
+
+                    <a href="garden-essentials.html" class="blog-gift-cta-button">
+
+                        Explore Gift Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                    <a href="contact.html" class="blog-gift-cta-link">
+
+                        Need help choosing?
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+                    <div class="footer-brand">
+
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/logo-light.png" alt="GreenPot">
+                        </a>
+
+                        <p>
+                            Bring more life into your space with thoughtfully
+                            selected plants, beautiful pots and everyday
+                            gardening essentials.
+                        </p>
+
+                        <div class="footer-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+
+                        <h3>Explore</h3>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+
+                            <li>
+                                <a href="blog-gift.html">Blog &amp; Gift</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Products -->
+                    <div class="footer-column">
+
+                        <h3>Our Products</h3>
+
+                        <ul>
+                            <li>
+                                <a href="products.html#indoor-plants">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#outdoor-plants">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#succulents">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#garden-essentials">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="bulk-orders.html">
+                                    Bulk Orders
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Contact -->
+                    <div class="footer-column footer-contact">
+
+                        <h3>Visit GreenPot</h3>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    24 Garden Street,<br>
+                                    Chennai, Tamil Nadu
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <a href="mailto:hello@greenpot.com">
+                                    hello@greenpot.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    Mon – Sat: 9:00 AM – 7:00 PM
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <div class="footer-bottom-inner">
+
+                    <p>
+                        © 2026 GreenPot. All rights reserved.
+                    </p>
+
+                    <div class="footer-bottom-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <span></span>
+
+                        <a href="#">Terms &amp; Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+     Scroll To Top
+========================================= -->
+
+    <button type="button" class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

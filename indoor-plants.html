@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenPot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="GreenPot">
+            </a>
+
+
+            <!-- Desktop / Main Navigation -->
+            <nav class="main-navigation" id="mainNavigation">
+
+                <!-- Mobile Menu Close -->
+                <button class="menu-close" id="menuClose" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item has-dropdown active">
+                        <a href="#">
+                            Products
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li class="nav-item active">
+                                <a href="indoor-plants.html">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="outdoor-plants.html">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="succulents.html">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="garden.html">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="blog-gift.html">
+                            Blog &amp; Gift
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile Menu Actions -->
+                <div class="mobile-menu-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="mobile-action-btn theme-toggle" id="mobileThemeToggle"
+                        aria-label="Toggle Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                        <span>Dark Mode</span>
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="mobile-action-btn rtl-toggle" id="mobileRtlToggle"
+                        aria-label="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                        <span>RTL Mode</span>
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="mobile-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </a>
+
+
+                    <!-- Bulk Orders -->
+                    <a href="bulk-orders.html" class="mobile-bulk-btn">
+                        Bulk Orders
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Right Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                    aria-label="Toggle Dark Mode" title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                    title="RTL Mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="header-login">
+                    <span>Login</span>
+                </a>
+
+
+                <!-- Bulk Orders -->
+                <a href="bulk-orders.html" class="header-bulk">
+                    <span>Bulk Orders</span>
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     Contact Page Hero
+========================================= -->
+
+    <section class="page-hero indoor-hero">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    GreenPot Collection
+                </span>
+
+                <h1>
+
+                    Bring green into<br>
+                    your everyday spaces.
+
+
+                </h1>
+
+                <p>
+                    Discover beautiful indoor plants chosen to bring
+                    natural character, freshness and life into your home.
+
+                </p>
+
+                <div class="page-hero-breadcrumb">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <i class="fa-solid fa-angle-right"></i>
+
+                    <span>
+                        Products
+                    </span>
+
+                    <i class="fa-solid fa-angle-right"></i>
+
+                    <span>
+                        Indoor Plants
+                    </span>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Indoor Plants Intro
+========================================= -->
+
+    <section class="category-intro-section">
+
+        <div class="container">
+
+            <div class="category-intro">
+
+                <span class="section-label">
+                    Indoor Collection
+                </span>
+
+                <h2>
+                    A little green can<br>
+                    change a room.
+                </h2>
+
+                <p>
+                    From easy-care favourites to statement plants,
+                    our indoor collection is designed for bedrooms,
+                    living rooms, workspaces and every little corner
+                    that could use some life.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Product Filter Bar
+========================================= -->
+
+    <section class="category-products-section">
+
+        <div class="container">
+
+            <div class="products-toolbar">
+
+                <div class="products-count">
+                    <strong id="plant-collection-title">
+                        Indoor Plants
+                    </strong>
+
+                    <span id="plant-result-count">
+                        18 plants
+                    </span>
+
+                    <small id="plant-result-summary" aria-live="polite">
+                        Showing 18 of 18 plants
+                    </small>
+                </div>
+
+
+                <div class="products-filters">
+
+                    <input type="search" id="plant-search" class="plant-search" placeholder="Search plants..."
+                        aria-label="Search plants">
+
+                    <select id="plant-filter" aria-label="Filter plants">
+                        <option value="all">
+                            All Plants
+                        </option>
+
+                        <option value="easy-care">
+                            Easy Care
+                        </option>
+
+                        <option value="low-light">
+                            Low Light
+                        </option>
+
+                        <option value="air-purifying">
+                            Air Purifying
+                        </option>
+
+                        <option value="statement">
+                            Statement Plants
+                        </option>
+
+                    </select>
+
+
+                    <select id="plant-sort" aria-label="Sort plants">
+
+                        <option value="featured">
+                            Sort: Featured
+                        </option>
+
+                        <option value="low-high">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high-low">
+                            Price: High to Low
+                        </option>
+
+                        <option value="name">
+                            Name: A–Z
+                        </option>
+
+                    </select>
+
+                    <button type="button" id="clear-filters" class="clear-filters-btn"
+                        aria-label="Clear filters, sort and search">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- =====================================
+             Product Grid
+        ====================================== -->
+
+            <div class="category-product-grid">
+
+
+                <!-- Product 01 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            Best Seller
+                        </span>
+
+                        <img src="images/indoor-plant-01.jpg" alt="Monstera Deliciosa">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Easy Care
+                        </span>
+
+                        <h3>
+                            Monstera Deliciosa
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 02 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-02.jpg" alt="Peace Lily">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Air Purifying
+                        </span>
+
+                        <h3>
+                            Peace Lily
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹649
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 03 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            New
+                        </span>
+
+                        <img src="images/indoor-plant-03.jpg" alt="Fiddle Leaf Fig">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Statement Plant
+                        </span>
+
+                        <h3>
+                            Fiddle Leaf Fig
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹1,299
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 04 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-04.jpg" alt="Snake Plant">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Low Light
+                        </span>
+
+                        <h3>
+                            Snake Plant
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹549
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 05 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-05.jpg" alt="ZZ Plant">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Easy Care
+                        </span>
+
+                        <h3>
+                            ZZ Plant
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹699
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 06 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-06.jpg" alt="Rubber Plant">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Medium Light
+                        </span>
+
+                        <h3>
+                            Rubber Plant
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Product 07 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            New
+                        </span>
+
+                        <img src="images/indoor-plant-07.jpg" alt="Areca Palm">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Indoor Favourite
+                        </span>
+
+                        <h3>
+                            Areca Palm
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 08 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-08.jpg" alt="Calathea Orbifolia">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Low Light
+                        </span>
+
+                        <h3>
+                            Calathea Orbifolia
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹999
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 09 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-09.jpg" alt="Philodendron">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Easy Care
+                        </span>
+
+                        <h3>
+                            Philodendron
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹749
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 10 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            Popular
+                        </span>
+
+                        <img src="images/indoor-plant-10.jpg" alt="Boston Fern">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Fresh Foliage
+                        </span>
+
+                        <h3>
+                            Boston Fern
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹599
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 11 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-11.jpg" alt="Chinese Evergreen">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Low Maintenance
+                        </span>
+
+                        <h3>
+                            Chinese Evergreen
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹699
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 12 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-12.jpg" alt="Dracaena">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Easy Care
+                        </span>
+
+                        <h3>
+                            Dracaena
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹849
+                            </strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Product 13 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-13.jpg" alt="Bird of Paradise">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Statement Plant
+                        </span>
+
+                        <h3>
+                            Bird of Paradise
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹1,499</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 14 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-14.jpg" alt="Spider Plant">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Easy Care
+                        </span>
+
+                        <h3>
+                            Spider Plant
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹499</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 15 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            Popular
+                        </span>
+
+                        <img src="images/indoor-plant-15.jpg" alt="Money Plant">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Beginner Friendly
+                        </span>
+
+                        <h3>
+                            Money Plant
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹399</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 16 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-16.jpg" alt="Pothos">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Low Light
+                        </span>
+
+                        <h3>
+                            Golden Pothos
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹449</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 17 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/indoor-plant-17.jpg" alt="Parlor Palm">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Air Purifying
+                        </span>
+
+                        <h3>
+                            Parlor Palm
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹749</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 18 -->
+
+                <article class="category-product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-tag">
+                            New
+                        </span>
+
+                        <img src="images/indoor-plant-18.jpg" alt="Alocasia">
+
+                        <button type="button" class="product-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="category-product-content">
+
+                        <span>
+                            Statement Plant
+                        </span>
+
+                        <h3>
+                            Alocasia
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <strong>₹1,099</strong>
+
+                            <a href="#">
+                                View Plant
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Indoor Plant Care Guide
+========================================= -->
+
+    <section class="indoor-care-section">
+
+        <div class="container">
+
+            <div class="indoor-care-heading">
+
+                <span class="section-label">
+                    Indoor Plant Care
+                </span>
+
+                <h2>
+                    Keep your plants<br>
+                    happy and healthy.
+                </h2>
+
+                <p>
+                    A few simple habits can make a big difference
+                    when caring for indoor greenery.
+                </p>
+
+            </div>
+
+
+            <div class="indoor-care-grid">
+
+                <!-- Care 01 -->
+
+                <div class="indoor-care-card">
+
+                    <span class="care-number">
+                        01
+                    </span>
+
+                    <div class="care-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <h3>
+                        Find the Right Light
+                    </h3>
+
+                    <p>
+                        Place your plant where it receives the
+                        amount of natural light it needs.
+                    </p>
+
+                </div>
+
+
+                <!-- Care 02 -->
+
+                <div class="indoor-care-card">
+
+                    <span class="care-number">
+                        02
+                    </span>
+
+                    <div class="care-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+
+                    <h3>
+                        Water Mindfully
+                    </h3>
+
+                    <p>
+                        Check the soil before watering and avoid
+                        keeping the roots constantly wet.
+                    </p>
+
+                </div>
+
+
+                <!-- Care 03 -->
+
+                <div class="indoor-care-card">
+
+                    <span class="care-number">
+                        03
+                    </span>
+
+                    <div class="care-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+
+                    <h3>
+                        Give Them Space
+                    </h3>
+
+                    <p>
+                        Good airflow and enough room around your
+                        plants help them grow comfortably.
+                    </p>
+
+                </div>
+
+
+                <!-- Care 04 -->
+
+                <div class="indoor-care-card">
+
+                    <span class="care-number">
+                        04
+                    </span>
+
+                    <div class="care-icon">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+
+                    <h3>
+                        Trim & Refresh
+                    </h3>
+
+                    <p>
+                        Remove damaged leaves regularly to keep
+                        your plants looking fresh and healthy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Indoor Plant Tips Section
+========================================= -->
+
+    <section class="indoor-tips-section">
+
+        <div class="container">
+
+            <div class="indoor-tips-layout">
+
+                <!-- Left Highlight -->
+
+                <div class="indoor-tips-highlight">
+
+                    <span class="tips-label">
+                        A Little Reminder
+                    </span>
+
+                    <div class="tips-quote-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h2>
+                        Good plant care<br>
+                        starts with<br>
+                        observation.
+                    </h2>
+
+                    <p>
+                        Before adding more water, sunlight or
+                        fertilizer, take a moment to look at what
+                        your plant is telling you.
+                    </p>
+
+                </div>
+
+
+                <!-- Right Tips -->
+
+                <div class="indoor-tips-list">
+
+                    <!-- Tip 01 -->
+
+                    <div class="indoor-tip">
+
+                        <span class="tip-number">
+                            01
+                        </span>
+
+                        <div class="tip-content">
+
+                            <h3>
+                                Check the Soil
+                            </h3>
+
+                            <p>
+                                Touch the top layer of soil before
+                                watering. Dry soil usually means
+                                your plant is ready for a drink.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tip 02 -->
+
+                    <div class="indoor-tip">
+
+                        <span class="tip-number">
+                            02
+                        </span>
+
+                        <div class="tip-content">
+
+                            <h3>
+                                Rotate Your Plant
+                            </h3>
+
+                            <p>
+                                Turn your plant occasionally so
+                                different sides receive natural
+                                light and growth stays balanced.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tip 03 -->
+
+                    <div class="indoor-tip">
+
+                        <span class="tip-number">
+                            03
+                        </span>
+
+                        <div class="tip-content">
+
+                            <h3>
+                                Watch for Changes
+                            </h3>
+
+                            <p>
+                                Yellow leaves, dry edges or slow
+                                growth can be useful signals that
+                                your plant needs attention.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Indoor Plants CTA Section
+========================================= -->
+
+    <section class="indoor-cta-section">
+
+        <div class="indoor-cta-overlay"></div>
+
+        <div class="container">
+
+            <div class="indoor-cta-content">
+
+                <span class="indoor-cta-label">
+                    Find Your Green
+                </span>
+
+                <h2>
+                    Ready to bring<br>
+                    home some green?
+                </h2>
+
+                <p>
+                    Explore our indoor collection and find a plant
+                    that feels right for your space and lifestyle.
+                </p>
+
+                <a href="products.html" class="indoor-cta-button">
+                    Explore Indoor Plants
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+                    <div class="footer-brand">
+
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/logo-light.png" alt="GreenPot">
+                        </a>
+
+                        <p>
+                            Bring more life into your space with thoughtfully
+                            selected plants, beautiful pots and everyday
+                            gardening essentials.
+                        </p>
+
+                        <div class="footer-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+
+                        <h3>Explore</h3>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+
+                            <li>
+                                <a href="blog-gift.html">Blog &amp; Gift</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Products -->
+                    <div class="footer-column">
+
+                        <h3>Our Products</h3>
+
+                        <ul>
+                            <li>
+                                <a href="products.html#indoor-plants">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#outdoor-plants">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#succulents">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#garden-essentials">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="bulk-orders.html">
+                                    Bulk Orders
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Contact -->
+                    <div class="footer-column footer-contact">
+
+                        <h3>Visit GreenPot</h3>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    24 Garden Street,<br>
+                                    Chennai, Tamil Nadu
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <a href="mailto:hello@greenpot.com">
+                                    hello@greenpot.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    Mon – Sat: 9:00 AM – 7:00 PM
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <div class="footer-bottom-inner">
+
+                    <p>
+                        © 2026 GreenPot. All rights reserved.
+                    </p>
+
+                    <div class="footer-bottom-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <span></span>
+
+                        <a href="#">Terms &amp; Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+     Scroll To Top
+========================================= -->
+
+    <button type="button" class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

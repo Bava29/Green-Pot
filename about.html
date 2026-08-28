@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenPot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="GreenPot">
+            </a>
+
+
+            <!-- Desktop / Main Navigation -->
+            <nav class="main-navigation" id="mainNavigation">
+
+                <!-- Mobile Menu Close -->
+                <button class="menu-close" id="menuClose" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a href="about.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item has-dropdown">
+                        <a href="#">
+                            Products
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="indoor-plants.html">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="outdoor-plants.html">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="succulents.html">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="garden.html">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="blog-gift.html">
+                            Blog &amp; Gift
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile Menu Actions -->
+                <div class="mobile-menu-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="mobile-action-btn theme-toggle" id="mobileThemeToggle"
+                        aria-label="Toggle Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                        <span>Dark Mode</span>
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="mobile-action-btn rtl-toggle" id="mobileRtlToggle"
+                        aria-label="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                        <span>RTL Mode</span>
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="mobile-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </a>
+
+
+                    <!-- Bulk Orders -->
+                    <a href="bulk-orders.html" class="mobile-bulk-btn">
+                        Bulk Orders
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Right Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                    aria-label="Toggle Dark Mode" title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                    title="RTL Mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="header-login">
+                    <span>Login</span>
+                </a>
+
+
+                <!-- Bulk Orders -->
+                <a href="bulk-orders.html" class="header-bulk">
+                    <span>Bulk Orders</span>
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     Contact Page Hero
+========================================= -->
+
+    <section class="page-hero about-hero">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    About GreenPot
+                </span>
+
+                <h1>
+                    Growing a greener
+                    way of living.
+
+                </h1>
+
+                <p>
+                    GreenPot is
+                    all about making plant-filled living simple
+                    and beautiful.
+
+                </p>
+
+                <div class="page-hero-breadcrumb">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <i class="fa-solid fa-angle-right"></i>
+
+                    <span>
+                        About
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+     Our Story Section
+========================================= -->
+
+    <section class="about-story-section">
+
+        <div class="container">
+
+            <div class="about-story-layout">
+
+                <!-- Image -->
+
+                <div class="about-story-image">
+
+                    <img src="images/about-story.jpg" alt="GreenPot plants and gardening collection">
+
+                    <div class="about-story-badge">
+
+                        <strong>
+                            2018
+                        </strong>
+
+                        <span>
+                            Growing since
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Content -->
+
+                <div class="about-story-content">
+
+                    <span class="section-label">
+                        Our Story
+                    </span>
+
+                    <h2>
+                        It started with<br>
+                        a love for green.
+                    </h2>
+
+                    <p>
+                        GreenPot began with a simple idea — bringing
+                        beautiful, healthy plants into everyday spaces
+                        should feel easy and enjoyable.
+                    </p>
+
+                    <p>
+                        What started as a small collection of indoor
+                        plants has grown into a place where plant lovers
+                        can discover greenery, pots and garden essentials
+                        chosen with care.
+                    </p>
+
+
+                    <!-- Story Highlights -->
+
+                    <div class="story-highlights">
+
+                        <div class="story-highlight">
+
+                            <strong>
+                                8+
+                            </strong>
+
+                            <span>
+                                Years Growing
+                            </span>
+
+                        </div>
+
+
+                        <div class="story-highlight">
+
+                            <strong>
+                                150+
+                            </strong>
+
+                            <span>
+                                Plant Varieties
+                            </span>
+
+                        </div>
+
+
+                        <div class="story-highlight">
+
+                            <strong>
+                                5K+
+                            </strong>
+
+                            <span>
+                                Happy Homes
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Our Values Section
+========================================= -->
+
+    <section class="about-values-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="about-values-heading">
+
+                <span class="section-label">
+                    What We Believe
+                </span>
+
+                <h2>
+                    Simple values behind<br>
+                    everything we grow.
+                </h2>
+
+                <p>
+                    From the plants we choose to the way we help
+                    you care for them, we believe good greenery
+                    should always come with thought and purpose.
+                </p>
+
+            </div>
+
+
+            <!-- Values -->
+
+            <div class="about-values-grid">
+
+                <!-- Value 01 -->
+
+                <div class="about-value-card">
+
+                    <div class="about-value-top">
+
+                        <span class="about-value-number">
+                            01
+                        </span>
+
+                        <span class="about-value-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Choose With Care
+                    </h3>
+
+                    <p>
+                        We look for healthy, beautiful plants and
+                        garden essentials that are worth bringing home.
+                    </p>
+
+                </div>
+
+
+                <!-- Value 02 -->
+
+                <div class="about-value-card">
+
+                    <div class="about-value-top">
+
+                        <span class="about-value-number">
+                            02
+                        </span>
+
+                        <span class="about-value-icon">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Keep It Simple
+                    </h3>
+
+                    <p>
+                        Plant care shouldn't feel complicated.
+                        We make choosing and caring for greenery easier.
+                    </p>
+
+                </div>
+
+
+                <!-- Value 03 -->
+
+                <div class="about-value-card">
+
+                    <div class="about-value-top">
+
+                        <span class="about-value-number">
+                            03
+                        </span>
+
+                        <span class="about-value-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Grow Together
+                    </h3>
+
+                    <p>
+                        Every plant has a story, and every customer
+                        becomes part of the growing GreenPot community.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     GreenPot Highlights Section
+========================================= -->
+
+    <section class="about-highlights-section">
+
+        <div class="container">
+
+            <div class="about-highlights-layout">
+
+                <!-- Left Content -->
+
+                <div class="about-highlights-content">
+
+                    <span class="section-label">
+                        GreenPot In Numbers
+                    </span>
+
+                    <h2>
+                        Growing a little<br>
+                        greener every day.
+                    </h2>
+
+                    <p>
+                        Over the years, GreenPot has grown with a
+                        community of people who believe that even
+                        a small touch of nature can make a difference.
+                    </p>
+
+                </div>
+
+
+                <!-- Right Stats -->
+
+                <div class="about-highlights-stats">
+
+                    <div class="about-stat">
+
+                        <strong>
+                            150+
+                        </strong>
+
+                        <span>
+                            Plant Varieties
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <strong>
+                            5K+
+                        </strong>
+
+                        <span>
+                            Happy Customers
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <strong>
+                            8+
+                        </strong>
+
+                        <span>
+                            Years of Growing
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <strong>
+                            25+
+                        </strong>
+
+                        <span>
+                            Garden Essentials
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Our Approach Section
+========================================= -->
+
+    <section class="about-approach-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="about-approach-heading">
+
+                <span class="section-label">
+                    Our Approach
+                </span>
+
+                <h2>
+                    Finding the right green<br>
+                    should feel simple.
+                </h2>
+
+                <p>
+                    We make it easier to discover plants that suit
+                    your space, your routine and the way you want
+                    to care for them.
+                </p>
+
+            </div>
+
+
+            <!-- Approach Steps -->
+
+            <div class="about-approach-grid">
+
+
+                <!-- Step 01 -->
+
+                <div class="approach-card">
+
+                    <div class="approach-card-top">
+
+                        <span class="approach-number">
+                            01
+                        </span>
+
+                        <span class="approach-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Understand Your Space
+                    </h3>
+
+                    <p>
+                        Think about your light, available space and
+                        everyday routine before choosing.
+                    </p>
+
+                    <span class="approach-line"></span>
+
+                </div>
+
+
+                <!-- Step 02 -->
+
+                <div class="approach-card">
+
+                    <div class="approach-card-top">
+
+                        <span class="approach-number">
+                            02
+                        </span>
+
+                        <span class="approach-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Choose What Fits
+                    </h3>
+
+                    <p>
+                        Explore greenery that naturally fits your
+                        surroundings, lifestyle and level of care.
+                    </p>
+
+                    <span class="approach-line"></span>
+
+                </div>
+
+
+                <!-- Step 03 -->
+
+                <div class="approach-card">
+
+                    <div class="approach-card-top">
+
+                        <span class="approach-number">
+                            03
+                        </span>
+
+                        <span class="approach-icon">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Grow With Confidence
+                    </h3>
+
+                    <p>
+                        Start caring at your own pace and enjoy
+                        watching your little corner of green grow.
+                    </p>
+
+                    <span class="approach-line"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Our Team Section
+========================================= -->
+
+    <section class="about-team-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="about-team-heading">
+
+                <span class="section-label">
+                    Meet The Team
+                </span>
+
+                <h2>
+                    The people behind<br>
+                    GreenPot.
+                </h2>
+
+                <p>
+                    A small team with a shared love for plants,
+                    thoughtful spaces and helping people grow
+                    their own connection with nature.
+                </p>
+
+            </div>
+
+
+            <!-- Team Grid -->
+
+            <div class="about-team-grid">
+
+
+                <!-- Team Member 01 -->
+
+                <div class="about-team-card">
+
+                    <div class="team-image">
+
+                        <img src="images/team-member-01.jpg" alt="GreenPot team member">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <div>
+
+                            <h3>
+                                Arjun Kumar
+                            </h3>
+
+                            <span>
+                                Founder & Plant Curator
+                            </span>
+
+                        </div>
+
+                        <div class="team-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Team Member 02 -->
+
+                <div class="about-team-card">
+
+                    <div class="team-image">
+
+                        <img src="images/team-member-02.jpg" alt="GreenPot team member">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <div>
+
+                            <h3>
+                                Meera Nair
+                            </h3>
+
+                            <span>
+                                Plant Care Specialist
+                            </span>
+
+                        </div>
+
+                        <div class="team-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Team Member 03 -->
+
+                <div class="about-team-card">
+
+                    <div class="team-image">
+
+                        <img src="images/team-member-03.jpg" alt="GreenPot team member">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <div>
+
+                            <h3>
+                                Rohan Menon
+                            </h3>
+
+                            <span>
+                                Garden & Space Consultant
+                            </span>
+
+                        </div>
+
+                        <div class="team-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Testimonials Section
+========================================= -->
+
+    <section class="about-testimonials-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="about-testimonials-heading">
+
+                <span class="section-label">
+                    Kind Words
+                </span>
+
+                <h2>
+                    What our customers say.
+                </h2>
+
+                <p>
+                    A few words from people who have made GreenPot
+                    part of their everyday spaces.
+                </p>
+
+            </div>
+
+
+            <!-- Testimonial Cards -->
+
+            <div class="about-testimonials-grid">
+
+
+                <!-- Testimonial 01 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-card-top">
+
+                        <div class="testimonial-stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <span class="testimonial-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <p>
+                        “GreenPot made choosing plants so easy.
+                        My new plants arrived healthy and have
+                        completely changed the feel of my home.”
+                    </p>
+
+                    <div class="testimonial-person">
+
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-01.jpg" alt="Ananya Krishnan">
+                        </div>
+
+                        <div>
+                            <strong>
+                                Ananya Krishnan
+                            </strong>
+
+                            <span>
+                                Homeowner
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Testimonial 02 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-card-top">
+
+                        <div class="testimonial-stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <span class="testimonial-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <p>
+                        “I loved how simple the whole experience was.
+                        The team helped me pick plants that actually
+                        work well in my apartment.”
+                    </p>
+
+                    <div class="testimonial-person">
+
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-02.jpg" alt="Rahul Sharma">
+                        </div>
+
+                        <div>
+                            <strong>
+                                Rahul Sharma
+                            </strong>
+
+                            <span>
+                                GreenPot Customer
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Testimonial 03 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-card-top">
+
+                        <div class="testimonial-stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <span class="testimonial-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <p>
+                        “Beautiful plants, thoughtful packaging and
+                        genuinely helpful advice. GreenPot has become
+                        my go-to place for greenery.”
+                    </p>
+
+                    <div class="testimonial-person">
+
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-03.jpg" alt="Priya Menon">
+                        </div>
+
+                        <div>
+                            <strong>
+                                Priya Menon
+                            </strong>
+
+                            <span>
+                                Plant Lover
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     About CTA Section
+========================================= -->
+
+    <section class="about-cta-section">
+
+        <div class="about-cta-overlay"></div>
+
+        <div class="container">
+
+            <div class="about-cta-content">
+
+                <span class="section-label">
+                    Grow With GreenPot
+                </span>
+
+                <h2>
+                    Bring a little more<br>
+                    green into your life.
+                </h2>
+
+                <p>
+                    Whether you're growing your first plant or
+                    creating a greener space, we're here to help
+                    you make it feel right.
+                </p>
+
+                <a href="products.html" class="about-cta-button">
+                    Explore Our Plants
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+                    <div class="footer-brand">
+
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/logo-light.png" alt="GreenPot">
+                        </a>
+
+                        <p>
+                            Bring more life into your space with thoughtfully
+                            selected plants, beautiful pots and everyday
+                            gardening essentials.
+                        </p>
+
+                        <div class="footer-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+
+                        <h3>Explore</h3>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+
+                            <li>
+                                <a href="blog-gift.html">Blog &amp; Gift</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Products -->
+                    <div class="footer-column">
+
+                        <h3>Our Products</h3>
+
+                        <ul>
+                            <li>
+                                <a href="products.html#indoor-plants">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#outdoor-plants">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#succulents">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#garden-essentials">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="bulk-orders.html">
+                                    Bulk Orders
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Contact -->
+                    <div class="footer-column footer-contact">
+
+                        <h3>Visit GreenPot</h3>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    24 Garden Street,<br>
+                                    Chennai, Tamil Nadu
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <a href="mailto:hello@greenpot.com">
+                                    hello@greenpot.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    Mon – Sat: 9:00 AM – 7:00 PM
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <div class="footer-bottom-inner">
+
+                    <p>
+                        © 2026 GreenPot. All rights reserved.
+                    </p>
+
+                    <div class="footer-bottom-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <span></span>
+
+                        <a href="#">Terms &amp; Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+     Scroll To Top
+========================================= -->
+
+    <button type="button" class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenPot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="GreenPot">
+            </a>
+
+
+            <!-- Desktop / Main Navigation -->
+            <nav class="main-navigation" id="mainNavigation">
+
+                <!-- Mobile Menu Close -->
+                <button class="menu-close" id="menuClose" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item has-dropdown active">
+                        <a href="index.html">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item has-dropdown">
+                        <a href="#">
+                            Products
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="indoor-plants.html">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="outdoor-plants.html">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="succulents.html">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="garden.html">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="blog-gift.html">
+                            Blog &amp; Gift
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile Menu Actions -->
+                <div class="mobile-menu-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="mobile-action-btn theme-toggle" id="mobileThemeToggle"
+                        aria-label="Toggle Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                        <span>Dark Mode</span>
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="mobile-action-btn rtl-toggle" id="mobileRtlToggle"
+                        aria-label="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                        <span>RTL Mode</span>
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="mobile-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </a>
+
+
+                    <!-- Bulk Orders -->
+                    <a href="bulk-orders.html" class="mobile-bulk-btn">
+                        Bulk Orders
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Right Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                    aria-label="Toggle Dark Mode" title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                    title="RTL Mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="header-login">
+                    <span>Login</span>
+                </a>
+
+
+                <!-- Bulk Orders -->
+                <a href="bulk-orders.html" class="header-bulk">
+                    <span>Bulk Orders</span>
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+     Home 2 Hero
+========================================= -->
+
+    <section class="home2-hero">
+
+        <!-- Background Image -->
+
+        <div class="home2-hero-image">
+
+            <img src="images/home2-hero.jpg" alt="Beautiful indoor plant space">
+
+        </div>
+
+
+        <!-- Overlay -->
+
+        <div class="home2-hero-overlay"></div>
+
+
+        <!-- Hero Content -->
+
+        <div class="container">
+
+            <div class="home2-hero-content">
+
+                <span class="home2-hero-label">
+                    GreenPot Collection
+                </span>
+
+                <h1>
+                    A greener
+                    way to live.
+                </h1>
+
+                <p>
+                    Thoughtfully selected plants and beautiful
+                    essentials for spaces that feel more alive.
+                </p>
+
+                <a href="products.html" class="home2-hero-button">
+                    Explore Collection
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Floating Information Card -->
+
+            <div class="home2-hero-card">
+
+                <div class="home2-card-number">
+                    01
+                </div>
+
+                <div class="home2-card-content">
+
+                    <span>
+                        Featured Plant
+                    </span>
+
+                    <h3>
+                        Monstera Deliciosa
+                    </h3>
+
+                    <p>
+                        Bold leaves for modern spaces.
+                    </p>
+
+                </div>
+
+                <a href="products.html" class="home2-card-arrow" aria-label="View featured plant">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     GreenPot Edit Section
+========================================= -->
+
+    <section class="greenpot-edit-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+
+            <div class="greenpot-edit-heading">
+
+                <div class="greenpot-edit-title">
+
+                    <span class="section-label">
+                        The GreenPot Edit
+                    </span>
+
+                    <h2>
+                        Greenery chosen<br>
+                        for the way you live.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Discover thoughtfully curated plant combinations
+                    designed to bring balance, character and natural
+                    beauty into everyday spaces.
+                </p>
+
+            </div>
+
+            <div class="greenpot-edit-grid">
+
+                <!-- Card 01 -->
+                <article class="greenpot-edit-card">
+
+                    <div class="edit-card-image">
+                        <img src="images/edit-quiet-corners.jpg" alt="Plants styled in a quiet corner">
+                    </div>
+
+                    <div class="edit-card-content">
+
+                        <span class="edit-card-number">01</span>
+
+                        <div>
+                            <h3>Quiet Corners</h3>
+
+                            <p>
+                                Soft greenery for reading nooks,
+                                bedrooms and slower moments.
+                            </p>
+
+                            <a href="products.html">
+                                Explore Edit
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 02 -->
+                <article class="greenpot-edit-card">
+
+                    <div class="edit-card-image">
+                        <img src="images/edit-bright-spaces.jpg" alt="Plants in a bright modern space">
+                    </div>
+
+                    <div class="edit-card-content">
+
+                        <span class="edit-card-number">02</span>
+
+                        <div>
+                            <h3>Bright Spaces</h3>
+
+                            <p>
+                                Fresh, light-loving plants for
+                                naturally bright interiors.
+                            </p>
+
+                            <a href="products.html">
+                                Explore Edit
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 03 -->
+                <article class="greenpot-edit-card">
+
+                    <div class="edit-card-image">
+                        <img src="images/edit-everyday-living.jpg" alt="Green plants styled around a home">
+                    </div>
+
+                    <div class="edit-card-content">
+
+                        <span class="edit-card-number">03</span>
+
+                        <div>
+                            <h3>Everyday Living</h3>
+
+                            <p>
+                                Easygoing greenery that makes
+                                everyday spaces feel more alive.
+                            </p>
+
+                            <a href="products.html">
+                                Explore Edit
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Plant Picks Section
+========================================= -->
+
+    <section class="plant-picks-section">
+
+        <div class="container">
+
+            <div class="plant-picks-layout">
+
+                <!-- Left Content -->
+
+                <div class="plant-picks-intro">
+
+                    <span class="section-label">
+                        Plant Picks
+                    </span>
+
+                    <h2>
+                        Small choices,<br>
+                        beautiful spaces.
+                    </h2>
+
+                    <p>
+                        Explore a few of our current favourites,
+                        selected for their character, easy care
+                        and ability to transform everyday spaces.
+                    </p>
+
+                    <a href="products.html" class="plant-picks-button">
+                        View All Plants
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Right Cards -->
+
+                <div class="plant-picks-grid">
+
+                    <!-- Plant 01 -->
+
+                    <article class="plant-pick-card">
+
+                        <div class="plant-pick-image">
+
+                            <img src="images/plant-pick-01.jpg" alt="Peace Lily plant">
+
+                        </div>
+
+                        <div class="plant-pick-content">
+
+                            <span>
+                                Easy Care
+                            </span>
+
+                            <h3>
+                                Peace Lily
+                            </h3>
+
+                            <a href="products.html">
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Plant 02 -->
+
+                    <article class="plant-pick-card">
+
+                        <div class="plant-pick-image">
+
+                            <img src="images/plant-pick-02.jpg" alt="Snake Plant">
+
+                        </div>
+
+                        <div class="plant-pick-content">
+
+                            <span>
+                                Low Light
+                            </span>
+
+                            <h3>
+                                Snake Plant
+                            </h3>
+
+                            <a href="products.html">
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Plant 03 -->
+
+                    <article class="plant-pick-card">
+
+                        <div class="plant-pick-image">
+
+                            <img src="images/plant-pick-03.jpg" alt="Fiddle Leaf Fig">
+
+                        </div>
+
+                        <div class="plant-pick-content">
+
+                            <span>
+                                Statement Plant
+                            </span>
+
+                            <h3>
+                                Fiddle Leaf Fig
+                            </h3>
+
+                            <a href="products.html">
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Plant Benefits Section
+========================================= -->
+
+    <section class="plant-benefits-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+
+            <div class="plant-benefits-heading">
+
+                <span class="section-label">
+                    Why Bring Plants Home?
+                </span>
+
+                <h2>
+                    More than a little<br>
+                    greenery.
+                </h2>
+
+                <p>
+                    The right plant can change the atmosphere of a space,
+                    making everyday surroundings feel calmer, fresher
+                    and more connected to nature.
+                </p>
+
+            </div>
+
+
+            <!-- Benefits -->
+
+            <div class="plant-benefits-grid">
+
+
+                <!-- Benefit 01 -->
+
+                <div class="plant-benefit-item">
+
+                    <span class="benefit-number">
+                        01
+                    </span>
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+
+                    <h3>
+                        Fresher Spaces
+                    </h3>
+
+                    <p>
+                        Bring a natural touch to your surroundings
+                        and create spaces that feel fresh.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 02 -->
+
+                <div class="plant-benefit-item">
+
+                    <span class="benefit-number">
+                        02
+                    </span>
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>
+                        Calmer Moments
+                    </h3>
+
+                    <p>
+                        Surround yourself with greenery that adds
+                        a sense of calm to everyday routines.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 03 -->
+
+                <div class="plant-benefit-item">
+
+                    <span class="benefit-number">
+                        03
+                    </span>
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <h3>
+                        Beautiful Interiors
+                    </h3>
+
+                    <p>
+                        Give empty corners and everyday rooms
+                        a more natural and welcoming character.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 04 -->
+
+                <div class="plant-benefit-item">
+
+                    <span class="benefit-number">
+                        04
+                    </span>
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <h3>
+                        Easy Connection
+                    </h3>
+
+                    <p>
+                        Start small, care at your own pace and
+                        enjoy watching something grow with you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Find Your Plant Section
+========================================= -->
+
+    <section class="find-plant-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="find-plant-heading">
+
+                <span class="section-label">
+                    Find Your Plant
+                </span>
+
+                <h2>
+                    What kind of space<br>
+                    are you creating?
+                </h2>
+
+                <p>
+                    Start with the space you have and discover
+                    greenery that fits naturally into it.
+                </p>
+
+            </div>
+
+
+            <!-- Choice Cards -->
+
+            <div class="find-plant-grid">
+
+
+                <!-- Calm Corner -->
+
+                <a href="products.html" class="find-plant-card">
+
+                    <div class="find-plant-image">
+
+                        <img src="images/find-calm-corner.jpg" alt="Plants for a calm corner">
+
+                    </div>
+
+                    <div class="find-plant-content">
+
+                        <span class="find-plant-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Calm Corner
+                            </h3>
+
+                            <p>
+                                Gentle greenery for quiet,
+                                relaxing spaces.
+                            </p>
+
+                        </div>
+
+                        <span class="find-plant-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- Work Space -->
+
+                <a href="products.html" class="find-plant-card">
+
+                    <div class="find-plant-image">
+
+                        <img src="images/find-work-space.jpg" alt="Plants for a work space">
+
+                    </div>
+
+                    <div class="find-plant-content">
+
+                        <span class="find-plant-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Work Space
+                            </h3>
+
+                            <p>
+                                Fresh touches of green for
+                                focused everyday work.
+                            </p>
+
+                        </div>
+
+                        <span class="find-plant-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- Statement Space -->
+
+                <a href="products.html" class="find-plant-card">
+
+                    <div class="find-plant-image">
+
+                        <img src="images/find-statement-space.jpg" alt="Statement plants for interiors">
+
+                    </div>
+
+                    <div class="find-plant-content">
+
+                        <span class="find-plant-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Statement Space
+                            </h3>
+
+                            <p>
+                                Bold plants that bring character
+                                into larger spaces.
+                            </p>
+
+                        </div>
+
+                        <span class="find-plant-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     GreenPot Promise Section
+========================================= -->
+
+    <section class="greenpot-promise-section">
+
+        <div class="container">
+
+            <!-- Heading -->
+
+            <div class="greenpot-promise-heading">
+
+                <span class="section-label">
+                    The GreenPot Promise
+                </span>
+
+                <h2>
+                    Thoughtful from<br>
+                    soil to doorstep.
+                </h2>
+
+            </div>
+
+
+            <!-- Promise Steps -->
+
+            <div class="greenpot-promise-list">
+
+
+                <!-- Step 01 -->
+
+                <div class="promise-step">
+
+                    <div class="promise-step-top">
+
+                        <span class="promise-number">
+                            01
+                        </span>
+
+                        <span class="promise-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Carefully Selected
+                    </h3>
+
+                    <p>
+                        Every plant is chosen with the attention to
+                        health, quality and its natural character.
+                    </p>
+
+                </div>
+
+
+                <!-- Connector -->
+
+                <div class="promise-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+
+                <!-- Step 02 -->
+
+                <div class="promise-step">
+
+                    <div class="promise-step-top">
+
+                        <span class="promise-number">
+                            02
+                        </span>
+
+                        <span class="promise-icon">
+                            <i class="fa-solid fa-box-open"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Safely Packed
+                    </h3>
+
+                    <p>
+                        Plants and garden essentials are prepared
+                        carefully so they arrive ready for their new space.
+                    </p>
+
+                </div>
+
+
+                <!-- Connector -->
+
+                <div class="promise-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+
+                <!-- Step 03 -->
+
+                <div class="promise-step">
+
+                    <div class="promise-step-top">
+
+                        <span class="promise-number">
+                            03
+                        </span>
+
+                        <span class="promise-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Ready for Your Space
+                    </h3>
+
+                    <p>
+                        From a quiet corner to a busy workspace,
+                        your new greenery is ready to settle in.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Home 2 CTA Section
+========================================= -->
+
+    <section class="home2-cta-section">
+
+        <div class="home2-cta-overlay"></div>
+
+        <div class="container">
+
+            <div class="home2-cta-content">
+
+                <span class="home2-cta-label">
+                    Bring Nature Home
+                </span>
+
+                <h2>
+                    Make room for green.
+                </h2>
+
+                <p>
+                    Find a plant that feels right for your space,
+                    your routine and the way you live.
+                </p>
+
+                <a href="products.html" class="home2-cta-button">
+                    Explore Plants
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+                    <div class="footer-brand">
+
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/logo-light.png" alt="GreenPot">
+                        </a>
+
+                        <p>
+                            Bring more life into your space with thoughtfully
+                            selected plants, beautiful pots and everyday
+                            gardening essentials.
+                        </p>
+
+                        <div class="footer-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+
+                        <h3>Explore</h3>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+
+                            <li>
+                                <a href="blog-gift.html">Blog &amp; Gift</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Products -->
+                    <div class="footer-column">
+
+                        <h3>Our Products</h3>
+
+                        <ul>
+                            <li>
+                                <a href="products.html#indoor-plants">
+                                    Indoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#outdoor-plants">
+                                    Outdoor Plants
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#succulents">
+                                    Succulents
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#garden-essentials">
+                                    Garden Essentials
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="bulk-orders.html">
+                                    Bulk Orders
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Contact -->
+                    <div class="footer-column footer-contact">
+
+                        <h3>Visit GreenPot</h3>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    24 Garden Street,<br>
+                                    Chennai, Tamil Nadu
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <a href="mailto:hello@greenpot.com">
+                                    hello@greenpot.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    Mon – Sat: 9:00 AM – 7:00 PM
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <div class="footer-bottom-inner">
+
+                    <p>
+                        © 2026 GreenPot. All rights reserved.
+                    </p>
+
+                    <div class="footer-bottom-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <span></span>
+
+                        <a href="#">Terms &amp; Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+     Scroll To Top
+========================================= -->
+
+    <button type="button" class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
