@@ -26047,3 +26047,55 @@ html.dark-mode .blog-journal-section .journal-all-link:hover {
 html.dark-mode .blog-journal-section .journal-image::after {
     background: transparent;
 }
+
+/* =========================================
+   HOME 2 HERO CARD - RTL POSITION
+   Keep LTR / Desktop unchanged
+========================================= */
+
+html[dir="rtl"] .home2-hero-card {
+    right: auto !important;
+    left: 20px !important;
+}
+
+/* =========================================================
+   CONTACT FORM - RTL INPUT ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] .contact-form-box .form-group {
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-form-box input,
+html[dir="rtl"] .contact-form-box select,
+html[dir="rtl"] .contact-form-box textarea {
+    text-align: right;
+    direction: rtl;
+}
+
+/* =========================================================
+   BULK ORDERS - RTL FORM ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] body.bulk-orders-page .bulk-form-group {
+    text-align: right;
+}
+
+html[dir="rtl"] body.bulk-orders-page .bulk-form-group input,
+html[dir="rtl"] body.bulk-orders-page .bulk-form-group select,
+html[dir="rtl"] body.bulk-orders-page .bulk-form-group textarea {
+    text-align: right;
+    direction: rtl;
+}
+
+/* =========================================
+   Mobile - Filter Section Top Spacing
+========================================= */
+
+@media (max-width: 767px) {
+
+    .category-products-section {
+        padding-top: 25px !important;
+    }
+
+}
