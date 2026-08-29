@@ -8770,6 +8770,1753 @@ html.dark-mode .home1-final-cta-link:hover i {
     transform: translateX(5px);
 }
 
+/* =========================================================
+   BLOG & GIFT - EXTRA CONTENT SECTIONS
+   Unique classes - no existing section conflicts
+========================================================= */
+
+
+/* =========================================================
+   01. PLANT CARE QUICK TIPS
+========================================================= */
+
+.gp-care-tips-section {
+    padding: 105px 0;
+    background: var(--light-bg);
+}
+
+
+.gp-care-tips-heading {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    align-items: end;
+    gap: 70px;
+
+    margin-bottom: 50px;
+}
+
+
+.gp-care-tips-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+
+.gp-care-tips-label::before {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+.gp-care-tips-heading h2 {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+    font-size: clamp(46px, 5vw, 68px);
+    font-weight: 600;
+    line-height: 0.98;
+}
+
+
+.gp-care-tips-heading>p {
+    max-width: 410px;
+
+    margin: 0 0 5px auto;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.gp-care-tips-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.gp-care-tip-card {
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 24px 28px;
+
+    background: var(--white);
+
+    border: 1px solid rgba(48, 72, 59, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.gp-care-tip-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(184, 117, 90, 0.35);
+
+    box-shadow: 0 18px 40px rgba(48, 72, 59, 0.10);
+}
+
+
+.gp-care-tip-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+
+.gp-care-tip-number {
+    color: var(--secondary-color);
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.gp-care-tip-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--light-bg);
+    color: var(--primary-color);
+
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    transition: var(--transition);
+}
+
+
+.gp-care-tip-card:hover .gp-care-tip-icon {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+
+.gp-care-tip-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+.gp-care-tip-content h3 {
+    margin-bottom: 10px;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+.gp-care-tip-content p {
+    margin-bottom: 20px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.gp-care-tip-content a {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    width: fit-content;
+
+    padding-bottom: 5px;
+
+    color: var(--primary-color);
+
+    border-bottom: 1px solid var(--secondary-color);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.gp-care-tip-content a:hover {
+    color: var(--secondary-color);
+}
+
+
+.gp-care-tip-content a i {
+    transition: transform 0.3s ease;
+}
+
+
+.gp-care-tip-content a:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   02. GIFT FINDER
+========================================================= */
+
+.gp-gift-finder-section {
+    padding: 110px 0;
+
+    background: var(--white);
+}
+
+
+.gp-gift-finder-wrapper {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    min-height: 650px;
+
+    background: var(--primary-color);
+
+    overflow: hidden;
+}
+
+
+.gp-gift-finder-image {
+    position: relative;
+
+    min-height: 650px;
+
+    overflow: hidden;
+}
+
+
+.gp-gift-finder-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+
+.gp-gift-finder-wrapper:hover .gp-gift-finder-image img {
+    transform: scale(1.04);
+}
+
+
+.gp-gift-finder-badge {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 15px;
+
+    background: var(--white);
+    color: var(--primary-color);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.gp-gift-finder-badge i {
+    color: var(--secondary-color);
+}
+
+
+.gp-gift-finder-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 70px 65px;
+}
+
+
+.gp-gift-finder-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 17px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+
+.gp-gift-finder-label::before {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+.gp-gift-finder-content h2 {
+    margin: 0 0 20px;
+
+    color: var(--white);
+
+    font-family: var(--heading-font);
+    font-size: clamp(50px, 5vw, 70px);
+    font-weight: 600;
+    line-height: 0.95;
+}
+
+
+.gp-gift-finder-content>p {
+    max-width: 480px;
+
+    margin-bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.gp-gift-finder-options {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 32px;
+}
+
+
+.gp-gift-finder-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 16px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.gp-gift-finder-option:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.gp-gift-option-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--secondary-color);
+
+    border-radius: 50%;
+
+    font-size: 14px;
+}
+
+
+.gp-gift-finder-option h3 {
+    margin-bottom: 2px;
+
+    color: var(--white);
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.gp-gift-finder-option p {
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.gp-gift-finder-button {
+    width: fit-content;
+
+    min-height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    padding: 0 22px;
+
+    background: var(--secondary-color);
+    color: var(--white);
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.gp-gift-finder-button:hover {
+    background: transparent;
+    color: var(--white);
+}
+
+
+.gp-gift-finder-button i {
+    transition: transform 0.3s ease;
+}
+
+
+.gp-gift-finder-button:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   03. GREENPOT GIFT PROMISE
+========================================================= */
+
+.gp-gift-promise-section {
+    padding: 110px 0;
+
+    background: var(--light-bg);
+}
+
+
+.gp-gift-promise-heading {
+    max-width: 760px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.gp-gift-promise-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+
+.gp-gift-promise-label::before,
+.gp-gift-promise-label::after {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+.gp-gift-promise-heading h2 {
+    margin-bottom: 18px;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+    font-size: clamp(48px, 5vw, 68px);
+    font-weight: 600;
+    line-height: 0.98;
+}
+
+
+.gp-gift-promise-heading p {
+    max-width: 570px;
+
+    margin: 0 auto;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.gp-gift-promise-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0;
+}
+
+
+.gp-gift-promise-item {
+    min-height: 285px;
+
+    padding: 28px 30px;
+
+    border-left: 1px solid rgba(48, 72, 59, 0.13);
+
+    transition: var(--transition);
+}
+
+
+.gp-gift-promise-item:last-child {
+    border-right: 1px solid rgba(48, 72, 59, 0.13);
+}
+
+
+.gp-gift-promise-item:hover {
+    background: var(--white);
+}
+
+
+.gp-gift-promise-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    background: var(--white);
+    color: var(--secondary-color);
+
+    border: 1px solid rgba(184, 117, 90, 0.25);
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    transition: var(--transition);
+}
+
+
+.gp-gift-promise-item:hover .gp-gift-promise-icon {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+
+.gp-gift-promise-number {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--secondary-color);
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.gp-gift-promise-item h3 {
+    margin-bottom: 10px;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+.gp-gift-promise-item p {
+    max-width: 240px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark-mode .gp-care-tips-section,
+html.dark-mode .gp-gift-promise-section {
+    background: #142019;
+}
+
+
+html.dark-mode .gp-care-tip-card,
+html.dark-mode .gp-gift-promise-item:hover {
+    background: #1C2922;
+}
+
+
+html.dark-mode .gp-care-tip-card {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+
+html.dark-mode .gp-care-tip-content h3,
+html.dark-mode .gp-care-tips-heading h2,
+html.dark-mode .gp-gift-promise-heading h2,
+html.dark-mode .gp-gift-promise-item h3 {
+    color: #F1F4F2;
+}
+
+
+html.dark-mode .gp-care-tip-icon {
+    background: #25352C;
+    color: #E8ECE9;
+}
+
+
+html.dark-mode .gp-gift-promise-item {
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+
+html.dark-mode .gp-gift-promise-item:last-child {
+    border-right-color: rgba(255, 255, 255, 0.10);
+}
+
+
+html.dark-mode .gp-gift-promise-icon {
+    background: #25352C;
+}
+
+
+html.dark-mode .gp-care-tips-heading>p,
+html.dark-mode .gp-care-tip-content p,
+html.dark-mode .gp-gift-promise-heading p,
+html.dark-mode .gp-gift-promise-item p {
+    color: rgba(232, 236, 233, 0.68);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .gp-care-tips-label::before,
+html[dir="rtl"] .gp-gift-finder-label::before {
+    display: none;
+}
+
+html[dir="rtl"] .gp-care-tips-label::after,
+html[dir="rtl"] .gp-gift-finder-label::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+html[dir="rtl"] .gp-care-tips-heading>p {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+html[dir="rtl"] .gp-care-tip-content a i,
+html[dir="rtl"] .gp-gift-finder-button i {
+    transform: rotate(180deg);
+}
+
+
+html[dir="rtl"] .gp-gift-finder-badge {
+    left: auto;
+    right: 25px;
+}
+
+
+html[dir="rtl"] .gp-gift-finder-option {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .gp-gift-promise-item {
+    border-left: none;
+    border-right: 1px solid rgba(48, 72, 59, 0.13);
+}
+
+
+html[dir="rtl"] .gp-gift-promise-item:last-child {
+    border-left: 1px solid rgba(48, 72, 59, 0.13);
+    border-right: none;
+}
+
+
+/* =========================================================
+   LARGE TABLET / iPAD PRO
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    /* Care Tips */
+
+    .gp-care-tips-section {
+        padding: 85px 0;
+    }
+
+    .gp-care-tips-heading {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 45px;
+    }
+
+    .gp-care-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .gp-care-tip-card {
+        min-height: 300px;
+    }
+
+
+    /* Gift Finder */
+
+    .gp-gift-finder-section {
+        padding: 85px 0;
+    }
+
+    .gp-gift-finder-wrapper {
+        grid-template-columns: 1fr 1fr;
+        min-height: 590px;
+    }
+
+    .gp-gift-finder-image {
+        min-height: 590px;
+    }
+
+    .gp-gift-finder-content {
+        padding: 55px 45px;
+    }
+
+    .gp-gift-finder-content h2 {
+        font-size: 56px;
+    }
+
+
+    /* Gift Promise */
+
+    .gp-gift-promise-section {
+        padding: 85px 0;
+    }
+
+    .gp-gift-promise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .gp-gift-promise-item {
+        border-bottom: 1px solid rgba(48, 72, 59, 0.13);
+    }
+
+    .gp-gift-promise-item:nth-child(2) {
+        border-right: 1px solid rgba(48, 72, 59, 0.13);
+    }
+
+    .gp-gift-promise-item:last-child {
+        border-right: 1px solid rgba(48, 72, 59, 0.13);
+    }
+
+}
+
+
+/* =========================================================
+   iPAD MINI / TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .gp-care-tips-heading {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gp-care-tips-heading>p {
+        max-width: 600px;
+        margin: 0;
+    }
+
+
+    .gp-gift-finder-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .gp-gift-finder-image {
+        min-height: 430px;
+        height: 430px;
+    }
+
+    .gp-gift-finder-content {
+        min-height: 560px;
+        padding: 55px 50px;
+    }
+
+
+    .gp-gift-promise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gp-gift-promise-item {
+        min-height: 270px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* =========================
+       Care Tips
+    ========================= */
+
+    .gp-care-tips-section {
+        padding: 65px 0;
+    }
+
+    .gp-care-tips-heading {
+        margin-bottom: 35px;
+        gap: 15px;
+    }
+
+    .gp-care-tips-label {
+        margin-bottom: 13px;
+        font-size: 12px;
+    }
+
+    .gp-care-tips-heading h2 {
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .gp-care-tips-heading>p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .gp-care-tips-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .gp-care-tip-card {
+        min-height: auto;
+        padding: 22px 20px 25px;
+    }
+
+    .gp-care-tip-top {
+        margin-bottom: 30px;
+    }
+
+    .gp-care-tip-content h3 {
+        font-size: 28px;
+    }
+
+
+    /* =========================
+       Gift Finder
+    ========================= */
+
+    .gp-gift-finder-section {
+        padding: 65px 0;
+    }
+
+    .gp-gift-finder-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gp-gift-finder-image {
+        width: 100%;
+        min-height: 330px;
+        height: 330px;
+    }
+
+    .gp-gift-finder-badge {
+        left: 18px;
+        bottom: 18px;
+    }
+
+    .gp-gift-finder-content {
+        min-height: auto;
+        padding: 45px 25px 50px;
+    }
+
+    .gp-gift-finder-label {
+        font-size: 12px;
+    }
+
+    .gp-gift-finder-content h2 {
+        margin-bottom: 17px;
+        font-size: 48px;
+    }
+
+    .gp-gift-finder-content>p {
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .gp-gift-finder-option {
+        padding: 14px 0;
+    }
+
+    .gp-gift-finder-button {
+        width: 100%;
+    }
+
+
+    /* =========================
+       Gift Promise
+    ========================= */
+
+    .gp-gift-promise-section {
+        padding: 65px 0;
+    }
+
+    .gp-gift-promise-heading {
+        margin-bottom: 38px;
+    }
+
+    .gp-gift-promise-label {
+        font-size: 12px;
+    }
+
+    .gp-gift-promise-heading h2 {
+        font-size: 43px;
+        line-height: 1;
+    }
+
+    .gp-gift-promise-heading p {
+        font-size: 15px;
+    }
+
+    .gp-gift-promise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gp-gift-promise-item,
+    .gp-gift-promise-item:nth-child(2),
+    .gp-gift-promise-item:last-child {
+        min-height: auto;
+
+        padding: 28px 20px;
+
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(48, 72, 59, 0.13);
+    }
+
+    .gp-gift-promise-item:first-child {
+        border-top: 1px solid rgba(48, 72, 59, 0.13);
+    }
+
+    .gp-gift-promise-item p {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .gp-care-tips-heading h2 {
+        font-size: 38px;
+    }
+
+    .gp-care-tip-content h3 {
+        font-size: 26px;
+    }
+
+    .gp-gift-finder-image {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .gp-gift-finder-content {
+        padding: 40px 20px 45px;
+    }
+
+    .gp-gift-finder-content h2 {
+        font-size: 43px;
+    }
+
+    .gp-gift-promise-heading h2 {
+        font-size: 39px;
+    }
+
+}
+
+/* =========================================================
+   A GIFT THAT KEEPS GROWING
+   Blog & Gift Page Only
+========================================================= */
+
+.gp-growing-gift-section {
+    padding: 115px 0;
+
+    background: var(--light-bg);
+
+    overflow: hidden;
+}
+
+.gp-growing-gift-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 900px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+
+.gp-growing-gift-heading>div {
+    min-width: 0;
+}
+
+
+.gp-growing-gift-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 17px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.gp-growing-gift-label::before {
+    content: "";
+
+    width: 32px;
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+.gp-growing-gift-heading h2 {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+
+    font-size: 44px;
+
+    font-weight: 600;
+
+    line-height: 0.92;
+
+    letter-spacing: -1px;
+
+    text-align: center;
+}
+
+
+.gp-growing-gift-heading>p {
+    max-width: 620px;
+
+    margin: 25px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+.gp-growing-gift-gallery {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+
+/* =========================================================
+   Story
+========================================================= */
+
+.gp-growing-story {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    align-items: stretch;
+
+    min-height: 500px;
+}
+
+
+/* =========================================================
+   Image
+========================================================= */
+
+.gp-growing-story-image {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+}
+
+
+.gp-growing-story-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.8s ease;
+}
+
+
+.gp-growing-story:hover .gp-growing-story-image img {
+    transform: scale(1.045);
+}
+
+
+/* =========================================================
+   Content
+========================================================= */
+
+.gp-growing-story-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 60px 65px;
+
+    background: var(--white);
+}
+
+
+.gp-growing-story-number {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--secondary-color);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.gp-growing-story-label {
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.gp-growing-story-content h3 {
+    margin: 0 0 19px;
+
+    color: var(--primary-color);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(40px, 4vw, 57px);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+}
+
+
+.gp-growing-story-content p {
+    max-width: 430px;
+
+    margin: 0 0 28px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.gp-growing-story-content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    padding-bottom: 6px;
+
+    color: var(--primary-color);
+
+    border-bottom: 1px solid var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.gp-growing-story-content a:hover {
+    color: var(--secondary-color);
+}
+
+
+.gp-growing-story-content a i {
+    transition: transform 0.3s ease;
+}
+
+
+.gp-growing-story-content a:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   Story 02 - Reverse Layout
+========================================================= */
+
+.gp-growing-story-two {
+    grid-template-columns: 0.85fr 1.15fr;
+}
+
+
+/* =========================================================
+   Story 03 - Slightly Different Proportion
+========================================================= */
+
+.gp-growing-story-three {
+    grid-template-columns: 1.05fr 0.95fr;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark-mode .gp-growing-gift-section {
+    background: #142019;
+}
+
+
+html.dark-mode .gp-growing-story-content {
+    background: #1C2922;
+}
+
+
+html.dark-mode .gp-growing-gift-heading h2,
+html.dark-mode .gp-growing-story-content h3 {
+    color: #F1F4F2;
+}
+
+
+html.dark-mode .gp-growing-gift-heading>p,
+html.dark-mode .gp-growing-story-content p {
+    color: rgba(232, 236, 233, 0.68);
+}
+
+
+html.dark-mode .gp-growing-story-label {
+    color: rgba(232, 236, 233, 0.58);
+}
+
+
+html.dark-mode .gp-growing-story-content a {
+    color: #F1F4F2;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .gp-growing-gift-label::before {
+    display: none;
+}
+
+
+html[dir="rtl"] .gp-growing-gift-label::after {
+    content: "";
+
+    width: 32px;
+
+    height: 1px;
+
+    background: var(--secondary-color);
+}
+
+
+html[dir="rtl"] .gp-growing-gift-heading>p {
+    margin-left: 0;
+
+    margin-right: auto;
+}
+
+
+html[dir="rtl"] .gp-growing-story,
+html[dir="rtl"] .gp-growing-story-two,
+html[dir="rtl"] .gp-growing-story-three {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .gp-growing-story-content a i {
+    transform: rotate(180deg);
+}
+
+
+html[dir="rtl"] .gp-growing-story-content a:hover i {
+    transform: rotate(180deg) translateX(5px);
+}
+
+
+/* =========================================================
+   iPAD PRO
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .gp-growing-gift-section {
+        padding: 90px 0;
+    }
+
+
+    .gp-growing-gift-heading {
+        gap: 45px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .gp-growing-story {
+        grid-template-columns: 1fr 1fr;
+
+        min-height: 440px;
+    }
+
+
+    .gp-growing-story-two {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .gp-growing-story-image {
+        min-height: 440px;
+    }
+
+
+    .gp-growing-story-content {
+        padding: 45px 40px;
+    }
+
+
+    .gp-growing-story-content h3 {
+        font-size: 45px;
+    }
+
+
+    .gp-growing-gift-gallery {
+        gap: 55px;
+    }
+
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .gp-growing-gift-section {
+        padding: 80px 0;
+    }
+
+
+    .gp-growing-gift-heading {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .gp-growing-gift-heading>p {
+        max-width: 600px;
+
+        margin: 0;
+    }
+
+
+    .gp-growing-story,
+    .gp-growing-story-two,
+    .gp-growing-story-three {
+        grid-template-columns: 1fr 1fr;
+
+        min-height: 400px;
+    }
+
+
+    .gp-growing-story-image {
+        min-height: 400px;
+    }
+
+
+    .gp-growing-story-content {
+        padding: 35px 30px;
+    }
+
+
+    .gp-growing-story-content h3 {
+        font-size: 39px;
+    }
+
+
+    .gp-growing-story-content p {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    .gp-growing-gift-gallery {
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .gp-growing-gift-section {
+        padding: 65px 0;
+    }
+
+
+    .gp-growing-gift-heading {
+        margin-bottom: 38px;
+
+        gap: 16px;
+    }
+
+
+    .gp-growing-gift-label {
+        font-size: 12px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .gp-growing-gift-heading h2 {
+        font-size: 46px;
+
+        line-height: 0.96;
+    }
+
+
+    .gp-growing-gift-heading>p {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    .gp-growing-gift-gallery {
+        gap: 30px;
+    }
+
+
+    .gp-growing-story,
+    .gp-growing-story-two,
+    .gp-growing-story-three {
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: 0;
+    }
+
+
+    .gp-growing-story-two {
+        flex-direction: column-reverse;
+    }
+
+
+    .gp-growing-story-image {
+        width: 100%;
+
+        min-height: 320px;
+
+        height: 320px;
+    }
+
+
+    .gp-growing-story-content {
+        padding: 38px 24px 42px;
+    }
+
+
+    .gp-growing-story-number {
+        margin-bottom: 10px;
+    }
+
+
+    .gp-growing-story-label {
+        margin-bottom: 14px;
+    }
+
+
+    .gp-growing-story-content h3 {
+        margin-bottom: 17px;
+
+        font-size: 42px;
+
+        line-height: 0.98;
+    }
+
+
+    .gp-growing-story-content p {
+        max-width: 100%;
+
+        margin-bottom: 24px;
+
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .gp-growing-gift-section {
+        padding: 55px 0;
+    }
+
+
+    .gp-growing-gift-heading h2 {
+        font-size: 40px;
+    }
+
+
+    .gp-growing-story-image {
+        min-height: 280px;
+
+        height: 280px;
+    }
+
+
+    .gp-growing-story-content {
+        padding: 34px 20px 38px;
+    }
+
+
+    .gp-growing-story-content h3 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================
+   Gift Finder - Dark Mode
+========================================= */
+
+html.dark-mode .gp-gift-finder-section {
+    background: #142019;
+}
+
+
+html.dark-mode .gp-gift-finder-wrapper {
+    background: #1c2922;
+}
+
+
+/* Content */
+
+html.dark-mode .gp-gift-finder-content {
+    background: #1c2922;
+}
+
+
+html.dark-mode .gp-gift-finder-label {
+    color: #c98264;
+}
+
+
+html.dark-mode .gp-gift-finder-content h2 {
+    color: #f4f1e9;
+}
+
+
+html.dark-mode .gp-gift-finder-content>p {
+    color: rgba(244, 241, 233, 0.72);
+}
+
+
+/* =========================================
+   Gift Options
+========================================= */
+
+html.dark-mode .gp-gift-finder-option {
+    border-color: rgba(244, 241, 233, 0.10);
+}
+
+
+html.dark-mode .gp-gift-option-icon {
+    background: #24352c;
+    color: #c98264;
+}
+
+
+html.dark-mode .gp-gift-finder-option h3 {
+    color: #f4f1e9;
+}
+
+
+html.dark-mode .gp-gift-finder-option p {
+    color: rgba(244, 241, 233, 0.62);
+}
+
+
+/* =========================================
+   Button
+========================================= */
+
+html.dark-mode .gp-gift-finder-button {
+    background: #c98264;
+    color: #ffffff;
+}
+
+
+html.dark-mode .gp-gift-finder-button:hover {
+    background: #e09a78;
+    color: #ffffff;
+}
+
 /***************************************************Contact Page*********************************************************/
 
 /* =========================================
@@ -26096,6 +27843,47 @@ html[dir="rtl"] body.bulk-orders-page .bulk-form-group textarea {
 
     .category-products-section {
         padding-top: 25px !important;
+    }
+
+}
+
+/* =========================================
+   Contact Form Intro - Center Heading
+   iPad Mini + iPad Pro
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .contact-form-intro {
+        width: 100% !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-intro h2 {
+        width: 100% !important;
+        max-width: 650px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .contact-form-intro>p {
+        width: 100% !important;
+        max-width: 650px;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .contact-form-intro .section-label {
+        justify-content: center !important;
+        text-align: center !important;
     }
 
 }
