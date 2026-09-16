@@ -27887,3 +27887,101 @@ html[dir="rtl"] body.bulk-orders-page .bulk-form-group textarea {
     }
 
 }
+
+/* =========================================
+   Global horizontal alignment
+   Keep every primary page wrapper on the same
+   left and right gutter at each breakpoint.
+========================================= */
+
+:root {
+    --site-gutter: 24px;
+}
+
+.container,
+.header-container,
+.hero-container {
+    padding-inline: var(--site-gutter) !important;
+}
+
+@media (max-width: 991px) {
+    :root {
+        --site-gutter: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --site-gutter: 16px;
+    }
+}
+
+/* =========================================
+   Homepage 1 - Small Tips header alignment
+========================================= */
+
+.journal-section .journal-header .journal-heading {
+    max-width: 650px;
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+}
+
+.journal-section .journal-header .journal-heading .section-label {
+    display: inline-flex;
+    justify-content: flex-start;
+
+    margin-bottom: 14px;
+
+    text-align: left;
+}
+
+.journal-section .journal-header .journal-title {
+    margin: 0;
+}
+
+.journal-section .journal-header .journal-description {
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+
+    align-self: end;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .journal-section .journal-header .journal-description {
+        max-width: 100%;
+        align-self: start;
+    }
+}
+
+/* Give the four supporting Small Tips cards a consistent text inset. */
+.journal-section .journal-card-content {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .journal-section .journal-card-content {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+}
+
+/* Keep the featured Indoor Plants guide link aligned to the panel bottom. */
+.journal-section .journal-featured-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.journal-section .journal-featured-content .journal-read-link {
+    margin-top: auto;
+}
+
+/* Avoid doubled vertical spacing before the following Small Tips section. */
+.bulk-section {
+    padding-bottom: 200px;
+}
