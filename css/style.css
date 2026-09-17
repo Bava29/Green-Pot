@@ -8805,7 +8805,7 @@ html.dark-mode .home1-final-cta-link:hover i {
 
     color: var(--secondary-color);
 
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.8px;
     text-transform: uppercase;
@@ -8830,7 +8830,7 @@ html.dark-mode .home1-final-cta-link:hover i {
     color: var(--primary-color);
 
     font-family: var(--heading-font);
-    font-size: clamp(46px, 5vw, 68px);
+    font-size: 46px;
     font-weight: 600;
     line-height: 0.98;
 }
@@ -27902,6 +27902,11 @@ html[dir="rtl"] body.bulk-orders-page .bulk-form-group textarea {
 .header-container,
 .hero-container {
     padding-inline: var(--site-gutter) !important;
+}
+
+/* Give the home hero a little more breathing room on the left. */
+.hero-container {
+    padding-left: clamp(24px, 5vw, 72px) !important;
 }
 
 @media (max-width: 991px) {
